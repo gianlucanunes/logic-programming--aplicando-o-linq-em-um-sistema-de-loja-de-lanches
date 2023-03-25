@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches/1.0.0": {
+        "runtime": {
+          "logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

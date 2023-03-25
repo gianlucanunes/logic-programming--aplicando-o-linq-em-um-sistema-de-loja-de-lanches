@@ -1,4 +1,12 @@
-﻿// Cria a lista de lanches. São 3 categorias contendo 4 lanches cada, logo, o total de lanches é 12.
+﻿/*
+ * 
+ *      PT-BR: Exercício de Lógica de Programação: Aplicando o LINQ em um sistema de uma loja de lanches.
+ *
+ *      Feito por: Gianluca Nunes
+ *
+ */
+
+// Cria a lista de lanches do tipo lanche, ou seja, contendo as propriedades NomeCategoria, NomeLanche, DescLanche e PrecoLanche
 List<Lanche> listaLanches = new List<Lanche>() 
 {
     new Lanche {NomeCategoria="Normal", NomeLanche="Big Mac", DescLanche="Lanche normal do Mc", PrecoLanche=50.0},
@@ -18,65 +26,65 @@ List<Lanche> listaLanches = new List<Lanche>()
 System.Console.WriteLine("\nBem vindo. Lista de lanches abaixo.\n");
 
 
-// Lista os lanches na tela, junto da categoria e do preço em R$.
+// Lista os lanches na tela, junto da categoria e do preço em R$
 foreach (var item in listaLanches) 
 {
     System.Console.WriteLine($"Categoria: {item.NomeCategoria} --- Lanche: {item.NomeLanche} --- Preço: {item.PrecoLanche:c}");
 }
 
 
-// Pergunta ao usuário qual filtro de categoria ele vai aplicar: normal, vegano ou junk.
-_etq0:
+// Pergunta ao usuário qual filtro de categoria ele vai aplicar
+_menuFiltro:
 System.Console.WriteLine("\nDeseja aplicar qual filtro de categoria?\n(N) Normal\n(V) Vegano\n(J) Junk");
 string opcFiltro = Console.ReadLine().ToUpper();
 
 
-// Cria as variáveis de filtro.
+// Cria a variável de filtro para listar os lanches por categoria
 string filtroCategoria;
+
+// Cria a variável de filtro para listar mais detalhes sobre o lanche desejado
 string filtroLanche;
 
-
-// Valida a opção escolhida pelo usuário.
+// Valida o input do usuário
 if (opcFiltro != "N" && opcFiltro != "V" && opcFiltro != "J") 
 {
-    System.Console.WriteLine("\nOpção inválida! Tente novamente!\n");
-    goto _etq0;
+    System.Console.WriteLine("\nOpção inválida! Tente novamente!");
+    goto _menuFiltro;
 }
 
-
-// Lista os lanches da categoria normal junto com o preço em R$.
+// Lista os lanches da categoria normal junto com o preço em R$
 else if (opcFiltro == "N") 
 {
     System.Console.WriteLine("\nNa lista abaixo, temos os lanches da categoria Normal.\n");
     filtroCategoria = "Normal";
 
-    // Cria a Query com o filtro aplicado.
+    // Cria a Query com o filtro aplicado
     var catQuery = listaLanches.Where(i => i.NomeCategoria == filtroCategoria);
 
+    // Lista os lanches da categoria desejada
     foreach (Lanche item in catQuery) 
     {
         System.Console.WriteLine($"Lanche: {item.NomeLanche} --- Preço: {item.PrecoLanche:c}");
     }
 }
 
-
-// Lista os lanches da categoria vegano junto com o preço em R$.
+// Lista os lanches da categoria vegano junto com o preço em R$
 else if (opcFiltro == "V")
 {
     System.Console.WriteLine("\nNa lista abaixo, temos os lanches da categoria Vegano.\n");
     filtroCategoria = "Vegano";
 
-    // Cria a Query com o filtro aplicado.
+    // Cria a Query com o filtro aplicado
     var catQuery = listaLanches.Where(i => i.NomeCategoria == filtroCategoria);
 
+    // Lista os lanches da categoria desejada
     foreach (Lanche item in catQuery) 
     {
         System.Console.WriteLine($"Lanche: {item.NomeLanche} --- Preço: {item.PrecoLanche:c}");
     }
 }
 
-
-// Lista os lanches da categoria junk junto com o preço em R$.
+// Lista os lanches da categoria junk junto com o preço em R$
 else if (opcFiltro == "J")
 {
     System.Console.WriteLine("\nNa lista abaixo, temos os lanches da categoria Junk.\n");
@@ -85,6 +93,7 @@ else if (opcFiltro == "J")
     // Cria a Query com o filtro aplicado.
     var catQuery = listaLanches.Where(i => i.NomeCategoria == filtroCategoria);
 
+    // Lista os lanches da categoria desejada
     foreach (Lanche item in catQuery) 
     {
         System.Console.WriteLine($"Lanche: {item.NomeLanche} --- Preço: {item.PrecoLanche:c}");
@@ -92,29 +101,29 @@ else if (opcFiltro == "J")
 }
 
 
-// Pede ao usuário para que este digite o nome de um lanche para ver os detalhes.
-_etq1:
+// Pede ao usuário para que este digite o nome de um lanche para ver mais detalhes do mesmo
+_filtroLanche:
 System.Console.WriteLine("\nPor favor, escreva o nome de um lanche na tela para exibir mais detalhes sobre o mesmo.");
 filtroLanche = Console.ReadLine().ToLowerInvariant();
 
-// Cria a Query com o filtro de nome do lanche aplicado.
+// Cria a Query com o filtro de nome do lanche aplicado
 var LanQuery = listaLanches.Where(i => i.NomeLanche == filtroLanche);
 
 
-// Verifica se a Query está vazia, isto é, se o lanche digitado existe.
+// Verifica se a Query está vazia, isto é, se o lanche digitado existe
 if (LanQuery.Count() == 0) 
 {
     System.Console.WriteLine("\nO lanche digitado não existe. Por favor, tente novamente.");
-    goto _etq1;
+    goto _filtroLanche;
 }
 
-
-// Caso o lanche digitado exista, imprime os detalhes do lanche na tela.
+// Caso o lanche digitado exista, imprime os detalhes do lanche na tela
 foreach (Lanche item in LanQuery) 
 {
     System.Console.WriteLine($"\nNome do lanche: {item.NomeLanche}\nCategoria do lanche: {item.NomeCategoria}\nDescrição do lanche: {item.DescLanche}\nPreço do lanche: {item.PrecoLanche:c}\nData de fabricação: {item.DtFabricacao:dd/MM/yyyy}");
 }
 
+// Encerra o programa
 System.Console.WriteLine("\nTecle espaço para encerrar...");
 Console.ReadKey();
 

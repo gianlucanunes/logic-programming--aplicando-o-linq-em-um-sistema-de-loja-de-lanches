@@ -1,11 +1,7 @@
-// Cria a superclasse que vai gerar a herança.
+// Cria a superclasse Categoria
 public class Categoria 
 {
-
-    public int IdCategoria {get; set;} // O ID não é usado.
-
-    public string NomeCategoria {get; set;} // Nome categoria.
-
-    // De acordo com o diagrama, a classe não necessita de métodos.
-
+    // Cria as propriedades da classe
+    public int IdCategoria {get; set;} 
+    public string NomeCategoria {get; set;} 
 }

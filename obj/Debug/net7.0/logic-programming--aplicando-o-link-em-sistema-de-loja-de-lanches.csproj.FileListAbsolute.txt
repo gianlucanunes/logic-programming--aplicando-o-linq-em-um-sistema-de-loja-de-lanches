@@ -1,0 +1,15 @@
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\bin\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.exe
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\bin\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.deps.json
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\bin\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.runtimeconfig.json
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\bin\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.dll
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\bin\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.pdb
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.csproj.AssemblyReference.cache
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.GeneratedMSBuildEditorConfig.editorconfig
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.AssemblyInfoInputs.cache
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.AssemblyInfo.cs
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.csproj.CoreCompileInputs.cache
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.dll
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\refint\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.dll
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.pdb
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.genruntimeconfig.cache
+E:\Portfolio\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches\obj\Debug\net7.0\ref\logic-programming--aplicando-o-link-em-sistema-de-loja-de-lanches.dll
