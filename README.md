@@ -8,5 +8,6 @@ Eu utilizei:
 - Super Classe
 - Herança
 - LINQ (expressão LAMBDA)
+- Data e hora atuais do sistema
 - Validação
 <br><br>
